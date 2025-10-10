@@ -89,6 +89,7 @@ Process Control Block (PCB)
 ```
 
 4. Multitasking Operating System
+- Multiprogramming + Time quantum
  allows multiple tasks (processes or programs) to run apparently at the same time by rapidly switching the CPU among them.
 - 🌀 The OS uses CPU scheduling and context switching to give the illusion of parallel execution.
 
@@ -135,4 +136,41 @@ A Multiprocessor Operating System is an OS designed to control and coordinate mu
 
 7. Real-Time Operating System (RTOS) 
 - is a type of operating system designed to process data and execute tasks within a strict time limit (deadline).
+
+
+## Multi-Threading vs Multiple-Tasking :
+| Concept            | Description                                                             |
+| ------------------ | ----------------------------------------------------------------------- |
+| **Multitasking**   | Running **multiple tasks (processes)** at the same time.                |
+| **Multithreading** | Running **multiple threads** (smaller units) *within the same process*. |
+
+
+1. 🧮 Multitasking
+- In multitasking, the CPU switches between different processes rapidly.
+- Each process has its own memory space.
+- Examples:
+    - Running Chrome, VS Code, and Spotify at the same time.
+    - In Linux, each program (process) gets CPU time slices.
+- Each process runs “independently” — if one crashes, the others keep running.
+- CPU cache state is flushed 
+
+2. ⚙️ Multithreading
+- A thread is the smallest unit of CPU execution inside a process.
+- In multithreading, a single process creates multiple threads that share the same memory (async fns )
+- Used for parallel tasks within the same program — for example:
+    - A web server handling multiple user requests.
+    - A video player decoding video + playing audio simultaneously.
+---
+
+| Feature            | Multitasking                              | Multithreading                            |
+| ------------------ | ----------------------------------------- | ----------------------------------------- |
+| **Basic Unit**     | Process                                   | Thread                                    |
+| **Memory Space**   | Separate for each process                 | Shared among threads                      |
+| **Communication**  | Through Inter-Process Communication (IPC) | Easier via shared memory                  |
+| **Isolation**      | Processes are isolated                    | Threads are interdependent                |
+| **Failure Impact** | One process crash doesn’t affect others   | One thread crash can affect whole process |
+| **Overhead**       | High (more context switching, memory)     | Low (threads are lightweight ,cz same mem)|
+| **Use Case**       | Running multiple applications             | Performing multiple tasks inside one app  |
+
+
 
