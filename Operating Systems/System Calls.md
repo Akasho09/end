@@ -96,3 +96,29 @@ Load User Interface (GUI/CLI)
 - Adjustable via BIOS/UEFI
     - Users can change settings like boot order, system clock, enabling/disabling devices, etc.
 
+
+## 🧩 Difference Between 32-bit and 64-bit Operating Systems
+- The terms 32-bit and 64-bit refer to how a computer’s CPU (Central Processing Unit) handles information.
+- A 64-bit OS can process and store data in 64-bit chunks, while a 32-bit OS can handle only 32-bit chunks at a time.
+
+
+| Feature                          | **32-bit OS**                         | **64-bit OS**                                                                   |
+| -------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
+| **Processor Register Size**      | 32 bits                               | 64 bits                                                                         |
+| **Max Addressable Memory (RAM)** | Up to **4 GB**                        | More than **4 GB** (Theoretical limit is 16 Exabytes; practical limit ~ 256 TB) |
+| **Performance**                  | Slower for modern applications        | Faster and more efficient                                                       |
+| **Software Compatibility**       | Can run only **32-bit applications**  | Can run **both 32-bit and 64-bit applications**                                 |
+| **Data Handling**                | Processes 4 bytes (32 bits) at a time | Processes 8 bytes (64 bits) at a time                                           |
+| **Security Features**            | Limited                               | Enhanced (e.g., Kernel Patch Protection, DEP, ASLR)                             |
+| **OS Example**                   | Windows 7 32-bit, Ubuntu 16.04 32-bit | Windows 10/11 64-bit, Ubuntu 22.04 64-bit                                       |
+| **CPU Requirement**              | Works on 32-bit and 64-bit CPUs       | Works **only** on 64-bit CPUs                                                   |
+
+
+## 🧩 Comparison Between Different Types of Storage Devices in a Computer
+
+| Type                            | Description                                         | Example                   |
+| ------------------------------- | --------------------------------------------------- | ------------------------- |
+| **Primary Storage**             | Directly accessible by the CPU, very fast, volatile | RAM, Cache                |
+| **Secondary Storage**           | Non-volatile, used for long-term data storage       | Hard Disk, SSD            |
+| **Tertiary / External Storage** | Used for backups or portable data transfer          | Optical Discs, USB, Cloud |
+![alt text](image.png)
