@@ -31,5 +31,12 @@ Ace — can be high or low depending on game rules.
 Color — red (Hearts, Diamonds) or black (Clubs, Spades
 
 
+## 
+![alt text](image-7.png)
+
+=> 6!*2 / 7! = 2/7
+=>  5/7 .
+
+
 
 
